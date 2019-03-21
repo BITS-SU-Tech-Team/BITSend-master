@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscanitem"
+    tools:context=".ScanItemActivity">
+
+    <TextView
+        android:id="@+id/assocnameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-16dp"
+        android:layout_marginEnd="18dp"
+        app:srcCompat="@drawable/profilepictuph" />
+
+    <TextView
+        android:id="@+id/userDisplayTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="-24dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/eventSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assocnameTv"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/merchSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assocnameTv"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="150dp"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/merchSpin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/qr" />
+
+    <TextView
+        android:id="@+id/eventTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="274dp"
+        android:text="Events"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/merchTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="374dp"
+        android:text="Merch"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/logoutBTN"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/ic_logout_24dp" />
+
+
+</RelativeLayout>
